@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Background Image: Untouched original photograph */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://ddxckxosuhnaolrwcsan.supabase.co/storage/v1/object/public/Emmanuel%20Thatching/images/hero_image.png"
+          src="https://ddxckxosuhnaolrwcsan.supabase.co/storage/v1/object/public/Emmanuel%20Thatching/new%20gallery/thatch_roofing_joburg/thatching_install_joburg%20(21).avif"
           alt="Emmanuel Thatching, Swimming Pools and Outdoor Renovations in Gauteng"
           fill
           priority
