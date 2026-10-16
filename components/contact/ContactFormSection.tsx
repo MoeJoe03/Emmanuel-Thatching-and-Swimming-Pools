@@ -16,7 +16,19 @@ export default function ContactFormSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    const whatsappMessage = [
+      'New quote request from the website',
+      '',
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email || 'Not provided'}`,
+      `Location: ${formData.location}`,
+      `Service: ${formData.service}`,
+      `Timeline: ${formData.timeline || 'Not specified'}`,
+      `Project details: ${formData.message || 'Not provided'}`,
+    ].join('\n');
+
+    window.location.href = `https://wa.me/27633252012?text=${encodeURIComponent(whatsappMessage)}`;
   };
 
   const handleReset = () => {

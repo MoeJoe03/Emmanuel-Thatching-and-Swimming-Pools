@@ -5,6 +5,15 @@ import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 export const metadata: Metadata = {
   title: 'Emmanuel Thatching and Swimming Pools - Pty Ltd | Johannesburg & South Africa',
   description: 'Premier thatching, swimming pool construction, renovation, and outdoor living specialists in Johannesburg and Gauteng, South Africa. Get a free quote today.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
