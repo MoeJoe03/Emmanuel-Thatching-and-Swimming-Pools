@@ -11,6 +11,7 @@ interface GalleryGridProps {
 
 export default function GalleryGrid({ projects }: GalleryGridProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const shouldBypassOptimizer = (src: string) => src.toLowerCase().includes('.avif');
 
   const handleOpenLightbox = (index: number) => {
     setSelectedIndex(index);
@@ -71,6 +72,7 @@ export default function GalleryGrid({ projects }: GalleryGridProps) {
               src={project.image}
               alt={project.title}
               fill
+              unoptimized={shouldBypassOptimizer(project.image)}
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               referrerPolicy="no-referrer"
@@ -154,6 +156,7 @@ export default function GalleryGrid({ projects }: GalleryGridProps) {
                 src={activeProject.image}
                 alt={activeProject.title}
                 fill
+                unoptimized={shouldBypassOptimizer(activeProject.image)}
                 className="object-contain"
                 referrerPolicy="no-referrer"
                 priority
