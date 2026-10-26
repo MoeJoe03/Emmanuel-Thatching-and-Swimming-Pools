@@ -303,5 +303,29 @@ export const galleryProjects: GalleryProject[] = [
     image: `https://ddxckxosuhnaolrwcsan.supabase.co/storage/v1/object/public/Emmanuel%20Thatching/new%20gallery/pool%20install%20and%20renovations/pool_installation_and_renovation%20(${number}).avif`,
     description: "Swimming pool installation and renovation completed with careful construction, resurfacing, and finishing work.",
   })),
+  ...Array.from({ length: 17 }, (_, index) => index + 1).map((number, index) => ({
+    id: `g-${151 + index}`,
+    title: "Pool Renovation and Maintenance",
+    category: "SWIMMING POOLS",
+    location: "Gauteng",
+    image: `https://ddxckxosuhnaolrwcsan.supabase.co/storage/v1/object/public/Emmanuel%20Thatching/new%20gallery/pool%20renovation%20and%20maintenance/pool_installion_services_jhb_maintanance_pool_cleaning%20(${number}).avif`,
+    description: "Swimming pool renovation, maintenance, and cleaning completed with careful restoration and finishing work.",
+  })),
+  ...Array.from({ length: 9 }, (_, index) => index + 1).map((number, index) => ({
+    id: `g-${168 + index}`,
+    title: "Pool Renovation",
+    category: "SWIMMING POOLS",
+    location: "Gauteng",
+    image: `https://ddxckxosuhnaolrwcsan.supabase.co/storage/v1/object/public/Emmanuel%20Thatching/new%20gallery/pool%20renovation/Pool%20renovation%20(${number}).avif`,
+    description: "Swimming pool renovation completed with careful restoration and a refreshed finish.",
+  })),
+  ...Array.from({ length: 18 }, (_, index) => index + 1).map((number, index) => ({
+    id: `g-${177 + index}`,
+    title: "Pool Painting and Maintenance",
+    category: "SWIMMING POOLS",
+    location: "Gauteng",
+    image: `https://ddxckxosuhnaolrwcsan.supabase.co/storage/v1/object/public/Emmanuel%20Thatching/new%20gallery/pool%20painting%20and%20maintenance/pool%20maintenance%20(${number}).avif`,
+    description: "Swimming pool painting and maintenance completed with careful surface preparation and finishing work.",
+  })),
 
 ];
